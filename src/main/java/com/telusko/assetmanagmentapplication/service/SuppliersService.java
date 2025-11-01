@@ -46,6 +46,8 @@ public class SuppliersService {
         Suppliers suppliers = new Suppliers();
         suppliers.setSupplierName(supplierAddDTO.getSupplierName());
         suppliers.setAddress(supplierAddDTO.getAddress());
+        suppliers.setCountry(supplierAddDTO.getCountry());
+        suppliers.setCity(supplierAddDTO.getCity());
         suppliers.setContactEmail(supplierAddDTO.getContactEmail());
         suppliers.setContactName(supplierAddDTO.getContactName());
         suppliers.setContactPhone(supplierAddDTO.getContactPhone());
@@ -64,6 +66,8 @@ public class SuppliersService {
 
             supplier.setSupplierName(supplierAddDTO.getSupplierName());
             supplier.setAddress(supplierAddDTO.getAddress());
+            supplier.setCountry(supplierAddDTO.getCountry());
+            supplier.setCity(supplierAddDTO.getCity());
             supplier.setContactEmail(supplierAddDTO.getContactEmail());
             supplier.setContactName(supplierAddDTO.getContactName());
             supplier.setContactPhone(supplierAddDTO.getContactPhone());

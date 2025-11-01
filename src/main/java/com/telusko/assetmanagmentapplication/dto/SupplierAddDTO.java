@@ -14,6 +14,8 @@ public class SupplierAddDTO {
     private String contactEmail;
     private String contactPhone;
     private String address;
+    private String country;
+    private String city;
     private String registrationNo;
     private String status;
 }

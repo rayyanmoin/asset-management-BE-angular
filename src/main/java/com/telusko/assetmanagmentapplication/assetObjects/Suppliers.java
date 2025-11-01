@@ -30,6 +30,12 @@ public class Suppliers {
     @Column(name = "address", columnDefinition = "TEXT")
     private String address;
 
+    @Column(name = "country")
+    private String country;
+
+    @Column(name = "city")
+    private String city;
+
     @Column(name = "registration_no")
     private String registrationNo;
 
@@ -39,13 +45,15 @@ public class Suppliers {
     public Suppliers() {
     }
 
-    public Suppliers(Long supplierId, String supplierName, String contactName, String contactEmail, String contactPhone, String address, String registrationNo, String status) {
+    public Suppliers(Long supplierId, String supplierName, String contactName, String contactEmail, String contactPhone, String address, String country, String city,String registrationNo, String status) {
         this.supplierId = supplierId;
         this.supplierName = supplierName;
         this.contactName = contactName;
         this.contactEmail = contactEmail;
         this.contactPhone = contactPhone;
         this.address = address;
+        this.country = country;
+        this.city = city;
         this.registrationNo = registrationNo;
         this.status = status;
     }
