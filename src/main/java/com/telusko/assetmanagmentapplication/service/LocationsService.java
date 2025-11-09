@@ -31,6 +31,8 @@ public class LocationsService {
         Locations locations = new Locations();
         locations.setLocationName(locationAddDTO.getLocationName());
         locations.setLocationCode(locationAddDTO.getLocationCode());
+        locations.setCountry(locationAddDTO.getCountry());
+        locations.setCity(locationAddDTO.getCity());
         locations.setLocationDescription(locationAddDTO.getLocationDescription());
         locationsRepo.save(locations);
         return "Location saved successfully!";
@@ -56,6 +58,8 @@ public class LocationsService {
 
             location.setLocationName(locationAddDTO.getLocationName());
             location.setLocationCode(locationAddDTO.getLocationCode());
+            location.setCountry(locationAddDTO.getCountry());
+            location.setCity(locationAddDTO.getCity());
             location.setLocationDescription(locationAddDTO.getLocationDescription());
 
             locationsRepo.save(location);

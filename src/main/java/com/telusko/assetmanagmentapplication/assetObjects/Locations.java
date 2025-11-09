@@ -21,6 +21,12 @@ public class Locations {
     @Column(name = "location_code")
     private String locationCode;
 
+    @Column(name = "country")
+    private String country;
+
+    @Column(name = "city")
+    private String city;
+
     @Column(name= "location_description")
     private String locationDescription;
 
@@ -28,10 +34,12 @@ public class Locations {
     }
 
 
-    public Locations(Long locationId, String locationName, String locationCode, String locationDescription) {
+    public Locations(Long locationId, String locationName, String locationCode, String country, String city,String locationDescription) {
         this.locationId = locationId;
         this.locationName = locationName;
         this.locationCode = locationCode;
+        this.country = country;
+        this.city = city;
         this.locationDescription = locationDescription;
     }
 }
